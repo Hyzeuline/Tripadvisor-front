@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log(data);
     try {
       const response = await axios.post(
-        "http://localhost:3000/send-mail",
+        "https://site--tripadvisor-back--zvc5szvjvznr.code.run/send-mail",
         data
       );
       console.log(response);
