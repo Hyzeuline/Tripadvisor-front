@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tripadvisor</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="shortcut icon" href="./assets/img/TRIP-2af5b8e6.png" />
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <script
+      src="https://kit.fontawesome.com/f49fc69955.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/script.js"></script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <section class="container">
+        <a class="hidden-icon"><i class="fa-solid fa-bars"></i></a>
+        <img src="./assets/img/Tripadvisor-Logo.png" alt="tripadvisor-logo" />
+        <nav>
+          <a class="present-icon"
+            ><i class="fa-solid fa-pencil"></i><span> Avis</span></a
+          >
+          <a class="present-icon"
+            ><i class="fa-regular fa-bell"></i><span> Alertes</span></a
+          >
+          <a class="present-icon"
+            ><i class="fa-regular fa-heart"></i><span> Favoris</span></a
+          >
+          <button class="present-icon">Connectez-vous</button>
+          <a class="hidden-icon"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></a>
+          <a><i class="fa-solid fa-cart-shopping"></i><span> Panier</span></a>
+        </nav>
+      </section>
+    </header>
+    <main class="container">
+      <h1><span>Explorer</span> Paris</h1>
+      <p>
+        Les revenus influencent le choix des expériences présentées sur cette
+        page : <span>en savoir plus</span>.
+      </p>
+      <nav>
+        <div class="navigation">
+          <div>
+            <span>Hôtels</span>
+            <i class="fa-solid fa-bed"></i>
+          </div>
+          <div>
+            <span>Locations de vacances</span>
+            <i class="fa-regular fa-house"></i>
+          </div>
+          <div>
+            <span>Activités</span>
+            <i class="fa-solid fa-ticket"></i>
+          </div>
+          <div>
+            <span>Restaurants</span> <i class="fa-solid fa-utensils"></i>
+          </div>
+          <div>
+            <span>Forums de voyage</span> <i class="fa-regular fa-message"></i>
+          </div>
+          <div class="hidden-nav">
+            <span>Vols</span>
+            <i class="fa-solid fa-plane"></i>
+          </div>
+          <div class="hidden-nav">
+            <span>Croisières</span>
+            <i class="fa-solid fa-sailboat"></i>
+          </div>
+          <div>
+            <span>Plus</span>
+            <i class="fa-solid fa-ellipsis"></i>
+          </div>
+        </div>
+      </nav>
+      <section class="photos">
+        <div class="left">
+          <img class="red" src="./assets/img/view.jpg" alt="photo-paris" />
+        </div>
+        <div class="rigth">
+          <img class="blue" src="./assets/img/caption-8.jpg" alt="photo-moto" />
+          <img
+            class="green"
+            src="./assets/img/caption-9.jpg"
+            alt="eiffeil-tower"
+          />
+        </div>
+      </section>
+      <div class="localisation">
+        <a> Europe > France > Île-de-France > Paris </a>
+        <a> Visiter : Paris </a>
+      </div>
+      <div class="Paris">
+        <article>
+          <h2>La Ville Lumière éblouit en tous points</h2>
+          <p>
+            Aucun autre endroit au monde ne fait autant rêver que Paris. La
+            ville séduit par son art, son architecture, sa culture et sa
+            cuisine, mais il y a aussi des merveilles plus discrètes qui
+            n’attendent qu’à être explorées : les ruelles pavées pittoresques,
+            les pâtisseries au coin de la rue et les petits bistrots douillets
+            qui vous invitent à boire un verre de beaujolais. Préparez-vous à
+            vous approprier Paris.
+          </p>
+        </article>
+        <div class="map">
+          <div>
+            <h3>Paris : commencez à organiser !</h3>
+            <p>
+              Créez un voyage pour enregistrer et organiser toutes vos idées et
+              les visualiser sur une carte.
+            </p>
+            <button>Créez un voyage</button>
+          </div>
+          <img src="./assets/img/image_trips_card_medium.png" alt="map" />
+        </div>
+      </div>
+      <div class="Details">
+        <h2>Paris : Les immmanquables</h2>
+        <div class="Attractions">
+          <div class="intro">
+            <h4>Se divertir</h4>
+            <p>
+              Des lieux à voir, des rues à explorer et des expériences
+              emblématiques à Paris.
+            </p>
+            <a>Tout afficher</a>
+          </div>
+          <div class="Attractions-photos">
+            <a
+              ><img src="./assets/img/eiffeltoren.jpg" alt="tour-eiffel" />
+              <h4>Tour Eiffel</h4>
+              <div><i class="fa-solid fa-heart"></i></div
+            ></a>
+            <a
+              ><img src="./assets/img/louvre.jpg" alt="louvre" />
+              <h4>Musée du Louvre</h4>
+              <div><i class="fa-solid fa-heart"></i></div
+            ></a>
+            <a
+              ><img
+                src="./assets/img/marche-vernaison-maison.jpg"
+                alt="maison" />
+              <h4>Marché aux puces de Saint-Ouen</h4>
+              <div><i class="fa-solid fa-heart"></i></div
+            ></a>
+            <a
+              ><img src="./assets/img/the-bookstore.jpg" alt="bookstore" />
+              <h4>Librairie Shakespear</h4>
+              <div><i class="fa-solid fa-heart"></i></div
+            ></a>
+            <a
+              ><img
+                src="./assets/img/arc-de-triomphe-at-night.jpg"
+                alt="arc-triomphe" />
+              <h4>Arc de Triomphe</h4>
+              <div><i class="fa-solid fa-heart"></i></div
+            ></a>
+          </div>
+        </div>
+        <div class="Restaurants">
+          <div class="intro">
+            <h4>Se restaurer</h4>
+            <p>Bistrots et bars typiques, et plus encore à Paris.</p>
+            <a>Tout afficher</a>
+          </div>
+          <div class="Restaurants-photos">
+            <a
+              ><img src="./assets/img/meal1.jpg" alt="repas1" />
+              <h4>Vive les huîtres</h4>
+              <div><i class="fa-solid fa-heart"></i></div
+            ></a>
+            <a
+              ><img src="./assets/img/meal2.jpg" alt="repas2" />
+              <h4>Bistrot chic</h4>
+              <div><i class="fa-solid fa-heart"></i></div>
+            </a>
+            <a
+              ><img src="./assets/img/meal3.jpg" alt="repas3" />
+              <h4>ASPIC</h4>
+              <div><i class="fa-solid fa-heart"></i></div
+            ></a>
+            <a
+              ><img src="./assets/img/meal4.jpg" alt="repas4" />
+              <h4>Verjus</h4>
+              <div><i class="fa-solid fa-heart"></i></div
+            ></a>
+            <a
+              ><img src="./assets/img/meal5.jpg" alt="repas5" />
+              <h4>114 Faubourg</h4>
+              <div><i class="fa-solid fa-heart"></i></div
+            ></a>
+            <a
+              ><img src="./assets/img/meal6.jpg" alt="repas6" />
+              <h4>Frenchie</h4>
+              <div><i class="fa-solid fa-heart"></i></div
+            ></a>
+          </div>
+        </div>
+      </div>
+      <h2>Guides des voyageurs</h2>
+      <div class="guides">
+        <article class="article">
+          <img src="./assets/img/visit1.jpg" alt="thingstodo" />
+          <h4>Best things to do</h4>
+          <p>Par Eatwith</p>
+        </article>
+        <article class="article">
+          <img src="./assets/img/visit2.jpg" alt="musées" />
+          <h4>Les 10 monuments et musées à faire</h4>
+          <p>Par Topito</p>
+        </article>
+        <article class="article">
+          <img src="./assets/img/visit3.jpg" alt="os" />
+          <h4>Top 10 des choses à faire ou à voir dans le 14ème</h4>
+          <p>Par Topito</p>
+        </article>
+      </div>
+    </main>
+    <footer>
+      <img src="./assets/img/TRIP-2af5b8e6.png" alt="logo" />
+      <p>
+        Made at
+        <a
+          href="https://www.lereacteur.io/?utm_source=google&utm_medium=cpc&utm_campaign=FR-SN-Brand&utm_term=le%20reacteur&utm_content=377851505166&gad_source=1&gad_campaignid=1695930647&gbraid=0AAAAADP5alY7_z_jYtT4Ghh3vwgHGE7LZ&gclid=CjwKCAjw7_DEBhAeEiwAWKiCCxtQpHxeVq-tfLzRf_bXpB3BDo0W1fBv6Ma_gxzMFJ19YHDSWmco9RoC2BUQAvD_BwE"
+          target="_blank"
+          >Le Reacteur</a
+        >
+        - 2025
+      </p>
+    </footer>
+    <div class="modal toggle" id="modal">
+      <form class="connexion">
+        <i class="fa-solid fa-xmark" id="cross-toggle"></i>
+        <h2>Formulaire de contact</h2>
+        <input
+          type="text"
+          name="firstname"
+          id="firstname"
+          value=""
+          placeholder="Prénom"
+        />
+        <br />
+        <input
+          type="text"
+          name="lastname"
+          id="lastname"
+          value=""
+          placeholder="Nom"
+        />
+        <br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          value=""
+          placeholder="Email"
+        />
+        <br />
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Écrivez votre message ici..."
+        ></textarea
+        ><br />
+        <button type="submit">Envoyer le formulaire</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,514 @@
+:root {
+  --TS-med: "TS-Med";
+  --TS-reg: "TS-Reg";
+  --background-color-white: rgb(255, 255, 255);
+  --color-coral: #fe5d5d;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: TS-Reg, sans-serif;
+}
+header {
+  background-color: var(--background-color-white);
+  height: 60px;
+  width: 100%;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+}
+
+header img {
+  width: 190px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hidden-icon {
+  display: none;
+}
+
+nav a {
+  padding: 10px 10px;
+  margin: 0 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+nav a:hover {
+  background-color: #f2f2f2;
+}
+header button {
+  border-radius: 20px;
+  border: 0;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--TS-med);
+  margin: 0px 0px 0px 5px;
+  padding: 0 10px;
+}
+button:hover {
+  background-color: #4c4c4c;
+}
+
+h1 {
+  font-family: var(--TS-med);
+  font-size: 54px;
+  letter-spacing: 1.1px;
+  padding-top: 20px;
+  line-height: 70px;
+}
+
+h1 > span {
+  color: var(--color-coral);
+}
+
+main p {
+  margin-bottom: 30px;
+  font-size: 14px;
+  color: #333;
+}
+
+main p span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+main nav .navigation {
+  display: flex;
+  gap: 10px;
+}
+.navigation > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  border: 1px solid black;
+  padding: 12px 15px;
+  border-radius: 14px;
+  /* flex: 1; */
+  width: calc((100% - 50px) / 6);
+  cursor: pointer;
+}
+
+.navigation .hidden-nav {
+  display: none;
+}
+
+.navigation div:hover {
+  background-color: black;
+  color: white;
+}
+
+main section {
+  display: flex;
+  margin-top: 30px;
+  gap: 2px;
+  height: 430px;
+}
+
+main section img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.left {
+  flex: 1;
+}
+
+.rigth {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 2px;
+  height: calc(50% - 1px);
+}
+
+.localisation {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  padding: 30px 0px;
+}
+.localisation a {
+  cursor: pointer;
+}
+
+.Paris {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.Paris article {
+  width: 50%;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.Paris article p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 12px;
+}
+.map {
+  font-family: var(--TS-med);
+  width: 40%;
+  border-radius: 16px;
+}
+.map h3 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  line-height: 40px;
+}
+
+.map p {
+  font-family: var(--TS-reg);
+  font-size: 16px;
+  margin: 0px 0px 24px;
+}
+.map div {
+  padding: 32px;
+  border-radius: 16px 16px 0 0;
+  background-color: var(--color-coral);
+}
+.map button {
+  border-radius: 8px;
+  border: 0;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "TS-Med";
+  margin: 0px 0px 0px 5px;
+  padding: 10px 10px;
+  height: 54px;
+  width: 154px;
+}
+.map button:hover {
+  background-color: #4c4c4c;
+}
+.map img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0 0 16px 16px;
+}
+
+.Details h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0px 0px 30px;
+}
+
+.Attractions,
+.Restaurants {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+.intro {
+  width: 20%;
+}
+
+.intro h4 {
+  font-size: 24px;
+}
+.intro p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 20px 0;
+}
+.intro a {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.Attractions-photos,
+.Restaurants-photos {
+  display: flex;
+  width: 70%;
+  overflow: scroll;
+  gap: 10px;
+  cursor: pointer;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.Attractions-photos::-webkit-scrollbar,
+.Restaurants-photos::-webkit-scrollbar {
+  display: none;
+}
+
+.Attractions-photos a,
+.Restaurants-photos a {
+  width: calc(
+    (100% - 20px) / 3
+  ); /*taille précise pour afficher entièrement les photos*/
+  flex-shrink: 0; /* ne réduit pas de taille*/
+  position: relative;
+}
+
+.Attractions-photos img,
+.Restaurants-photos img {
+  object-fit: cover;
+  width: 100%;
+  aspect-ratio: 27 / 20;
+}
+
+.Attractions-photos a div i,
+.Restaurants-photos a div i {
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Attractions-photos a div i:hover,
+.Restaurants-photos a div i:hover {
+  background-color: #696969;
+}
+
+.guides {
+  display: flex;
+  gap: 10px;
+}
+
+.article {
+  line-height: 20px;
+}
+
+.article h4 {
+  font-weight: bold;
+}
+
+.article img {
+  object-fit: cover;
+  aspect-ratio: 35 / 27;
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #faf1ed;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 50px;
+  height: 156px;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+footer p {
+  margin-left: 20px;
+}
+
+footer img {
+  height: 40px;
+  width: 40px;
+}
+
+@media (max-width: 1184px) {
+  .navigation .hidden-nav {
+    display: inherit;
+  }
+  .navigation {
+    flex-wrap: wrap;
+  }
+  .navigation > div {
+    width: calc((100% - 30px) / 4);
+  }
+}
+
+@media (max-width: 1024px) {
+  header nav a span {
+    display: none;
+  }
+  .Paris {
+    flex-wrap: wrap;
+  }
+  .Paris article {
+    width: 100%;
+    font-size: 16px;
+  }
+  .map {
+    width: 100%;
+    display: flex;
+  }
+  .map > div {
+    width: 50%;
+    border-radius: 16px 0px 0px 16px;
+  }
+  .map img {
+    width: 50%;
+    object-fit: cover;
+    border-radius: 0 16px 16px 0px;
+  }
+  .Attractions-photos a,
+  .Restaurants-photos a {
+    width: calc((100% - 20px) / 2.5);
+  }
+  .guides {
+    overflow: scroll;
+  }
+  .article {
+    width: calc((100% - 20px) / 2.5);
+    flex-shrink: 0;
+  }
+  .article::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .container .present-icon {
+    display: none;
+  }
+
+  .container .hidden-icon {
+    display: inherit;
+  }
+
+  .container nav > div {
+    display: flex;
+  }
+  nav a {
+    padding: 0;
+  }
+  .container .navigation {
+    flex-wrap: nowrap;
+    overflow: scroll;
+  }
+  .container .navigation::-webkit-scrollbar {
+    display: none;
+  }
+  .photos .left {
+    margin: 0px -20px;
+  }
+
+  .photos .rigth {
+    display: none;
+  }
+  .map {
+    flex-direction: column;
+  }
+  .map > div {
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+  }
+  .map img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0px 0px 16px 16px;
+  }
+  .Attractions,
+  .Restaurants {
+    flex-direction: column;
+  }
+
+  .Attractions-photos a,
+  .Restaurants-photos a,
+  .article {
+    width: calc((100% - 20px) / 1.5);
+  }
+  .guides::-webkit-scrollbar {
+    display: none;
+  }
+
+  .intro {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .Attractions-photos,
+  .Restaurants-photos {
+    width: 100%;
+  }
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  background-color: rgb(0, 0, 0, 0.8);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  padding: 60px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.connexion {
+  background-color: white;
+  padding: 60px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: black solid 2px;
+  border-radius: 10px;
+}
+
+.connexion i {
+  position: absolute;
+  right: 720px;
+  top: 85px;
+  cursor: pointer;
+}
+
+.connexion input,
+.connexion textarea {
+  width: 100%;
+  border: black solid 2px;
+  font-family: var(--TS-med);
+  padding: 20px 100px 20px 10px;
+}
+
+button {
+  background-color: #04aa6c;
+  font-family: var(--TS-med);
+  color: #f2f2f2;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 20px;
+}
+
+.toggle {
+  display: none;
+}
